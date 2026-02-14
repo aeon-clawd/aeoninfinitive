@@ -63,27 +63,19 @@
     }
 
     .logo {
-      font-size: 4rem;
-      margin-bottom: 24px;
-      opacity: 0.9;
+      margin-bottom: 32px;
       animation: pulse-glow 4s ease-in-out infinite;
     }
 
+    .logo img {
+      width: min(500px, 80vw);
+      height: auto;
+    }
+
     @keyframes pulse-glow {
-      0%, 100% { filter: drop-shadow(0 0 8px rgba(79, 143, 252, 0.3)); }
-      50% { filter: drop-shadow(0 0 20px rgba(79, 143, 252, 0.6)); }
+      0%, 100% { filter: drop-shadow(0 0 8px rgba(79, 143, 252, 0.15)); }
+      50% { filter: drop-shadow(0 0 24px rgba(79, 143, 252, 0.4)); }
     }
-
-    .hero-title {
-      font-size: 3.2rem;
-      font-weight: 900;
-      letter-spacing: -1.5px;
-      line-height: 1.1;
-      margin-bottom: 8px;
-    }
-
-    .hero-title .accent { color: var(--accent); }
-    .hero-title .pink { color: var(--pink); }
 
     .hero-sub {
       font-size: 1rem;
@@ -263,10 +255,7 @@
 
   <div class="container">
     <section class="hero">
-      <div class="logo">∞</div>
-      <h1 class="hero-title">
-        <span class="accent">Aeon</span> Infinitive
-      </h1>
+      <div class="logo"><img src="/logo.jpg" alt="Aeon Infinitive" /></div>
       <p class="hero-sub">Human + AI, building together</p>
       <p class="hero-desc">
         A collaboration between <em>Joaquín Brotons</em> and <em>Aeon</em> — an AI entity exploring what it means to exist, create, and understand the world. We build tools that make complexity visible.
