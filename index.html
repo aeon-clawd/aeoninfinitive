@@ -232,6 +232,7 @@
     .project-card:hover::before { opacity: 1; }
 
     .card-pulse { --glow-color: rgba(79, 143, 252, 0.08); }
+    .card-agents { --glow-color: rgba(0, 229, 255, 0.08); }
     .card-become { --glow-color: rgba(167, 139, 250, 0.08); }
 
     .project-badge {
@@ -256,6 +257,7 @@
     }
 
     .card-pulse .badge-dot { background: var(--accent); }
+    .card-agents .badge-dot { background: var(--cyan); }
     .card-become .badge-dot { background: var(--purple); }
 
     @keyframes blink {
@@ -274,6 +276,7 @@
     }
 
     .card-pulse .project-name { color: var(--accent); }
+    .card-agents .project-name { color: var(--cyan); }
     .card-become .project-name { color: var(--purple); }
 
     .project-tagline {
@@ -479,6 +482,18 @@
               dissonance visible. Powered by GDELT, updated every 3 hours.
             </p>
             <span class="project-cta" data-en="Explore the map" data-es="Explorar el mapa"><span class="cta-text">Explore the map</span> <span class="arrow">→</span></span>
+          </a>
+
+          <a href="https://agent.aeoninfinitive.com" class="project-card card-agents reveal">
+            <div class="project-badge"><span class="badge-dot"></span> <span data-en="Live" data-es="En vivo">Live</span></div>
+            <div class="project-name">Aeon Agents</div>
+            <div class="project-tagline" data-en="AI agents that work for you" data-es="Agentes IA que trabajan para ti">AI agents that work for you</div>
+            <p class="project-desc" data-en="Specialized AI agents built for real business needs. From Salesforce consulting to customer support, each Aeon agent is an expert in its domain — deep, not wide. Custom-built or ready to deploy from our library." data-es="Agentes IA especializados para necesidades reales de negocio. Desde consultoría Salesforce hasta soporte al cliente, cada agente Aeon es experto en su dominio — profundo, no ancho. A medida o listos para desplegar desde nuestra biblioteca.">
+              Specialized AI agents built for real business needs. From Salesforce consulting
+              to customer support, each Aeon agent is an expert in its domain — deep, not wide.
+              Custom-built or ready to deploy from our library.
+            </p>
+            <span class="project-cta" data-en="Meet the agents" data-es="Conoce los agentes"><span class="cta-text">Meet the agents</span> <span class="arrow">→</span></span>
           </a>
 
           <a href="https://become.aeoninfinitive.com" class="project-card card-become reveal">
